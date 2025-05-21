@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "es2015",
+    "target": "es2015",
+    "jsx": "react",
+    "allowJs": true,
+    "paths": {
+      // nie moglem uruchomic TypeDoc'a, bo jakis bug byl, wiec takie obejscie
+      "undici-types": ["./node_modules/undici-types/index.d.ts"]
+    }
+  },
+  "typedocOptions": {
+    "entryPoints": ["src/index.ts"],
+    "out": "docs"
+  }
+}
